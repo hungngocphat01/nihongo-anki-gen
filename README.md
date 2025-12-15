@@ -132,10 +132,25 @@ The `mappings` section defines how the LLM output maps to your Anki card fields.
 - `vocab`: The word or phrase itself (exactly as it appeared in your list).
 - `furigana`: The reading of the word (hiragana).
 - `example`: An example sentence in Japanese.
-- `example_trans`: Translation of the example sentence in the desired language.
+- `example_trans`: Translation of the example sentence in the desired language. The translation is deliberately prompted to be a bit word-by-word.
 - `meaning`: The meaning of the word in the desired language.
 - `hanviet`: Han-Viet reading (Vietnamese transcription of the kanji).
   > **Note:** The `hanviet` key is only populated when the tool is run with `--language=vietnamese`.
+
+# The way I structure the templates
+
+<img style="max-width: 600px;" src="./screenshots/front.png" />
+<img style="max-width: 600px;" src="./screenshots/back.png" />
+
+I don't learn words alone but always put it inside the context of the **Example sentence** due to the sheer amount of homonyms (同音異義語) at the N2+ level. This is why the front side shows both the meaning and the Japanese sentence with the word covered.
+
+Word covering can be implemented through a CSS trick: **bold** the target word in the example sentence, and use the following CSS in the front:
+
+```css
+.hint-hide b {
+	color: transparent;
+}
+```
 
 # Acknowledgements
 
