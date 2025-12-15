@@ -1,0 +1,23 @@
+decks:
+  vocab: Test::Vocab
+  collocation: Test::Collocation
+templates:
+  vocab: 'Nihongo Sentence Translation'
+  collocation: 'Nihongo Sentence Translation'
+mappings:
+  vocab:
+    Index: vocab
+    Word: vocab
+    Kana: furigana
+    Example: example
+    ExampleTrans: example_trans
+    Meaning: meaning
+    HanViet: hanviet 
+  collocation:
+    Index: vocab
+    Word: vocab
+    Kana: furigana
+    Example: example
+    ExampleTrans: example_trans
+    Meaning: meaning
+    HanViet: hanviet

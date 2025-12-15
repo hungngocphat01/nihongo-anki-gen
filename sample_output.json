@@ -1,0 +1,193 @@
+{
+    "output": [
+        {
+            "vocab": "別人に成りすます",
+            "furigana": "べつじんに なりすます",
+            "meaning": "giả mạo thành người khác",
+            "example": "彼は別人に成りすまして、詐欺を働いた。",
+            "example_trans": "Hắn đã giả mạo thành người khác để thực hiện hành vi lừa đảo.",
+            "kind": "collocation",
+            "hanviet": ""
+        },
+        {
+            "vocab": "束縛が強め",
+            "furigana": "そくばくが つよめ",
+            "meaning": "kiểm soát nhiều (bạn gái)",
+            "example": "彼女は束縛が強めなので、彼氏は少し疲れている。",
+            "example_trans": "Vì bạn gái cô ấy kiểm soát nhiều nên bạn trai có vẻ hơi mệt mỏi.",
+            "kind": "vocab",
+            "hanviet": "TỰC PHƯỢC CƯỜNG"
+        },
+        {
+            "vocab": "巻き上げる",
+            "furigana": "まきあげる",
+            "meaning": "lừa lấy tiền từ ai đó",
+            "example": "詐欺師はお金持ちから大金を巻き上げた。",
+            "example_trans": "Kẻ lừa đảo đã lừa lấy một số tiền lớn từ người giàu.",
+            "kind": "vocab",
+            "hanviet": "QUYỂN THƯỢNG"
+        },
+        {
+            "vocab": "エラ削り",
+            "furigana": "エラけずり",
+            "meaning": "gọt cằm",
+            "example": "彼女はエラ削りの手術を受けた。",
+            "example_trans": "Cô ấy đã phẫu thuật gọt cằm.",
+            "kind": "vocab",
+            "hanviet": "TƯỚC"
+        },
+        {
+            "vocab": "脂肪吸引",
+            "furigana": "しぼうきゅういん",
+            "meaning": "hút mỡ",
+            "example": "脂肪吸引は美容整形の一つだ。",
+            "example_trans": "Hút mỡ là một trong những loại phẫu thuật thẩm mỹ.",
+            "kind": "vocab",
+            "hanviet": "CHI PHƯƠNG HẤP DẪN"
+        },
+        {
+            "vocab": "糸リフト",
+            "furigana": "いとリフト",
+            "meaning": "nâng cơ bằng chỉ (thread lift)",
+            "example": "糸リフトで顔が若返った。",
+            "example_trans": "Khuôn mặt đã trẻ lại nhờ nâng cơ bằng chỉ.",
+            "kind": "vocab",
+            "hanviet": "MỊCH"
+        },
+        {
+            "vocab": "切開リフト",
+            "furigana": "せっかいリフト",
+            "meaning": "nâng cơ bằng phẫu thuật (surgical lift)",
+            "example": "切開リフトは効果が高いと言われている。",
+            "example_trans": "Nâng cơ bằng phẫu thuật được cho là có hiệu quả cao.",
+            "kind": "vocab",
+            "hanviet": "THIẾT KHAI"
+        },
+        {
+            "vocab": "豊胸",
+            "furigana": "ほうきょう",
+            "meaning": "nâng ngực",
+            "example": "彼女は豊胸手術を考えている。",
+            "example_trans": "Cô ấy đang cân nhắc phẫu thuật nâng ngực.",
+            "kind": "vocab",
+            "hanviet": "PHONG HUNG"
+        },
+        {
+            "vocab": "土手",
+            "furigana": "どて",
+            "meaning": "bờ sông (kiểu Nhật, đê)",
+            "example": "子供たちが土手で遊んでいる。",
+            "example_trans": "Bọn trẻ đang chơi trên bờ sông.",
+            "kind": "vocab",
+            "hanviet": "THỔ THỦ"
+        },
+        {
+            "vocab": "川沿い",
+            "furigana": "かわぞい",
+            "meaning": "dọc bờ sông",
+            "example": "川沿いを散歩するのが好きだ。",
+            "example_trans": "Tôi thích đi dạo dọc bờ sông.",
+            "kind": "vocab",
+            "hanviet": "XUYÊN DUYÊN"
+        },
+        {
+            "vocab": "端っこ",
+            "furigana": "はしっこ",
+            "meaning": "góc, mép, rìa",
+            "example": "部屋の端っこに荷物を置いた。",
+            "example_trans": "Tôi đặt hành lý ở góc phòng.",
+            "kind": "vocab",
+            "hanviet": "ĐOAN"
+        },
+        {
+            "vocab": "散策",
+            "furigana": "さんさく",
+            "meaning": "tản bộ, đi dạo",
+            "example": "公園を散策してリフレッシュした。",
+            "example_trans": "Tôi đã đi dạo trong công viên và cảm thấy sảng khoái.",
+            "kind": "vocab",
+            "hanviet": "TẢN SÁCH"
+        },
+        {
+            "vocab": "探検",
+            "furigana": "たんけん",
+            "meaning": "thám hiểm, khám phá",
+            "example": "子供たちは裏山を探検した。",
+            "example_trans": "Bọn trẻ đã thám hiểm ngọn núi phía sau nhà.",
+            "kind": "vocab",
+            "hanviet": "THAM THÁM"
+        },
+        {
+            "vocab": "破談になる",
+            "furigana": "はだんになる",
+            "meaning": "bị hủy bỏ (hôn ước, đàm phán)",
+            "example": "結婚の話が破談になってしまった。",
+            "example_trans": "Chuyện cưới xin đã bị hủy bỏ.",
+            "kind": "collocation",
+            "hanviet": ""
+        },
+        {
+            "vocab": "それなりに",
+            "furigana": "それなりに",
+            "meaning": "tương xứng, đến mức đó",
+            "example": "彼はそれなりに努力している。",
+            "example_trans": "Anh ấy cũng đã nỗ lực tương xứng/đến mức đó.",
+            "kind": "vocab",
+            "hanviet": ""
+        },
+        {
+            "vocab": "しょっちゅう",
+            "furigana": "",
+            "meaning": "thường xuyên, luôn luôn",
+            "example": "彼はしょっちゅう遅刻する。",
+            "example_trans": "Anh ấy thường xuyên đi muộn.",
+            "kind": "vocab",
+            "hanviet": ""
+        },
+        {
+            "vocab": "潤う",
+            "furigana": "うるおう",
+            "meaning": "trở nên phong phú, khá giả (cuộc sống)",
+            "example": "給料が上がって生活が潤った。",
+            "example_trans": "Tiền lương tăng lên khiến cuộc sống trở nên khá giả hơn.",
+            "kind": "vocab",
+            "hanviet": "NHUẬN"
+        },
+        {
+            "vocab": "報われる",
+            "furigana": "むくわれる",
+            "meaning": "được đền đáp, được báo đáp",
+            "example": "努力が報われて、合格できた。",
+            "example_trans": "Nỗ lực đã được đền đáp, tôi đã đỗ.",
+            "kind": "vocab",
+            "hanviet": "BÁO"
+        },
+        {
+            "vocab": "運の要素",
+            "furigana": "うんのようそ",
+            "meaning": "yếu tố may mắn",
+            "example": "成功には運の要素も大きい。",
+            "example_trans": "Trong thành công, yếu tố may mắn cũng rất lớn.",
+            "kind": "collocation",
+            "hanviet": ""
+        },
+        {
+            "vocab": "スポットを当てる",
+            "furigana": "スポットをあてる",
+            "meaning": "làm nổi bật, thu hút sự chú ý",
+            "example": "新しい技術にスポットを当てて紹介する。",
+            "example_trans": "Giới thiệu bằng cách tập trung làm nổi bật công nghệ mới.",
+            "kind": "collocation",
+            "hanviet": ""
+        },
+        {
+            "vocab": "大金を積んでも",
+            "furigana": "たいきんをつんでも",
+            "meaning": "dù có bỏ ra số tiền lớn",
+            "example": "大金を積んでも、その絵は手に入らなかった。",
+            "example_trans": "Dù đã bỏ ra rất nhiều tiền nhưng tôi vẫn không thể có được bức tranh đó.",
+            "kind": "collocation",
+            "hanviet": ""
+        }
+    ]
+}

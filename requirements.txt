@@ -1,0 +1,5 @@
+langchain>=0.0.350
+loguru>=0.7.0
+pyyaml>=6.0
+requests>=2.31.0
+langchain-google-vertexai>=3.0.1
