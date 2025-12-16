@@ -2,13 +2,13 @@
 
 ## The goal
 
-**Automating the creation of Japanese Anki flashcards from raw notes.**
+**Automating the creation of Japanese Anki flashcards from handwritten notes.**
 
-My typical workflow involves watching Japanese content and noting down new words (and sometimes their context) into a simple text file. Previously, I had to look up each word individually, search for example sentences on Weblio, or prompt an LLM to generate them one by one.
+An intermediate+ learner's workflow might typically involve watching Japanese content and noting down new words in the wild (and sometimes their context) into a simple text file. Normally, I had to look up each word individually, search for example sentences on Weblio, or prompt an LLM to generate them one by one.
 
-As I advanced towards N2, the volume of new vocabulary exploded, and manual card creation became a burden. I needed automation.
+However, as one advances towards N2, the volume of new vocabulary explodes, and manual card creation becomes a burden. Automation is unavoidable.
 
-My raw notes are quite unstructured and random. Sometimes it's just a word, sometimes a phrase, sometimes with a quick meaning in English or Vietnamese:
+In my case, the raw notes are quite unstructured and random. Sometimes it's just a word, sometimes a phrase, sometimes with or without additional context, and sometimes with a quick meaning in English or Vietnamese:
 
 ```text
 別人に成りすます
@@ -17,13 +17,9 @@ My raw notes are quite unstructured and random. Sometimes it's just a word, some
 スポットを当てる to bring attention
 エラ削り gọt cằm
 脂肪吸引
-糸リフト
-切開リフト
 ```
 
-As you can see, the input is inconsistent. It might be a standalone word, or it might include context-dependent meanings I noted down.
-
-I typically separate my Anki cards into **Single Words** and **Collocations**, using two different decks. This tool handles that separation automatically. You can configure the specific deck names and Note Types in `config.yaml`, as well as map the generated data fields to your specific Anki template structure for each category.
+I typically separate my Anki cards into **Vocabs** and **Collocations**, using two different decks. This tool handles that separation automatically. You can configure the specific deck names and Note Types in `config.yaml`, as well as map the generated data fields to your specific Anki template structure for each category.
 
 ### What this project does
 
@@ -39,7 +35,7 @@ I typically separate my Anki cards into **Single Words** and **Collocations**, u
                          +-----------+
 ```
 
-Very simple:
+The workflow is simple:
 - Get your random vocabulary notes
 - Prompt Gemini to generate the necessary fields for the Anki template **in your desired language**
 - Insert into Anki directly (requires AnkiConnect). You can also export it as a JSON file without Anki.
@@ -137,20 +133,46 @@ The `mappings` section defines how the LLM output maps to your Anki card fields.
 - `hanviet`: Han-Viet reading (Vietnamese transcription of the kanji).
   > **Note:** The `hanviet` key is only populated when the tool is run with `--language=vietnamese`.
 
-# The way I structure the templates
+# How the output can be used
 
 <img style="max-width: 600px;" src="./screenshots/front.png" />
 <img style="max-width: 600px;" src="./screenshots/back.png" />
 
-I don't learn words alone but always put it inside the context of the **Example sentence** due to the sheer amount of homonyms (同音異義語) at the N2+ level. This is why the front side shows both the meaning and the Japanese sentence with the word covered.
+My way is that words shouldn't be learned alone. It's always put inside the context of the **Example sentence**, mainly due to the sheer amount of homonyms at the N3+ level. This is why the front side shows both the meaning and the Japanese sentence with the word covered.
 
-Word covering can be implemented through a CSS trick: **bold** the target word in the example sentence, and use the following CSS in the front:
+Word covering can be implemented through a CSS trick: **bold** the target word in the example sentence: `愛する人を失った悲しみを旅で<b>慰める</b>`.
+
+Then structure the HTML/CSS similar to:
+
+```html
+<section class="hint-hide" id="main-example">
+	<div class="big-text example-text fnt-serif">{{Example}}</div>
+</section>
+```
 
 ```css
 .hint-hide b {
 	color: transparent;
 }
 ```
+
+# Why don't just use e.g. Yomitan with AnkiConnect?
+
+Some might suggest sentence mining by watching anime with Japanese subtitle and use ASBPlayer + Yomitan + AnkiConnect to automatically 1) grab the word and the whole context, 2) look up the dictionary and 3) insert to Anki directly.
+
+To me, the problem with this approach is that:
+
+- Low upfront cost of vocab insertion = large backlog in Anki later
+
+- Good Yomitan dictionaries are mostly in English. I'm tired of learning Japanese already. Do I really have to wrestle with English phrasal verbs too? Nah
+  - Yomitan is only used for *quick lookup*
+  - Sometimes English expresses a sense better, sometimes my native tongue. It's judged on a case-by-case basis
+
+- Automatically pulling definitions from a dictionary produces too many meaning entries. I want to focus on the specific meaning/word sense that I encountered in the wild
+
+- Sometimes the correct sense only becomes clear after e.g. a Google Images search. I only note down what makes sense in the context I found
+
+
 
 # Acknowledgements
 
