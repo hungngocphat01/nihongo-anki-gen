@@ -24,3 +24,11 @@ def test_highlight_sentence_conjugated():
 def test_highlight_sentence_no_match():
     res = highlight_sentence("りんご", "みかんはおいしい")
     assert res == "みかんはおいしい"
+
+def test_highlight_sentence_ambiguous():
+    # "行く" (len 2) vs "行" (len 1). "行く" should be preferred as it is longer.
+    # Sentence: "銀行に行く" (Ginkou ni iku)
+    # If we picked "行" from "銀行", result would be "銀<u><b>行</b></u>に行く".
+    # If we pick "行く", result is "銀行に<u><b>行く</b></u>".
+    res = highlight_sentence("行く", "銀行に行く")
+    assert res == "銀行に<u><b>行く</b></u>"
