@@ -58,6 +58,18 @@ class AnkiConnectClient:
     def get_api_version(self):
         return self.req("version")
 
+    def find_notes(self, query: str) -> list[int]:
+        return self.req("findNotes", query=query)
+
+    def notes_info(self, notes: list[int]) -> list[dict]:
+        return self.req("notesInfo", notes=notes)
+
+    def update_note_fields(self, note_id: int, fields: dict):
+        return self.req(
+            "updateNoteFields",
+            note={"id": note_id, "fields": fields}
+        )
+
 
 def entry_to_anki_fields(entry, mapping):
     return {

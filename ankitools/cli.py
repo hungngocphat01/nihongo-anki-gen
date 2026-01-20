@@ -1,6 +1,6 @@
 import argparse
 import sys
-from ankitools.commands import gencards
+from ankitools.commands import gencards, cloze_transform
 
 def main():
     parser = argparse.ArgumentParser(
@@ -12,11 +12,17 @@ def main():
     # Gencards subcommand
     gencards_parser = subparsers.add_parser('gencards', help='Generate Anki cards from wordlist')
     gencards.setup_parser(gencards_parser)
+
+    # Cloze Transform subcommand
+    cloze_parser = subparsers.add_parser('cloze-transform', help='Transform existing cards with cloze highlighting')
+    cloze_transform.setup_parser(cloze_parser)
     
     args = parser.parse_args()
     
     if args.command == 'gencards':
         gencards.run(args)
+    elif args.command == 'cloze-transform':
+        cloze_transform.run(args)
     elif args.command is None:
         parser.print_help()
         sys.exit(1)
