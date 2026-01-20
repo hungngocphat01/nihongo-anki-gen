@@ -1,6 +1,4 @@
 import requests
-from ankigen.config import AnkiConfig
-from ankigen.utils import logger
 
 ANKI_CONNECT_URL = "http://localhost:8765"
 
@@ -59,14 +57,6 @@ class AnkiConnectClient:
 
     def get_api_version(self):
         return self.req("version")
-
-    def validate_config(self, config: AnkiConfig):
-        for entry_kind in ["vocab", "collocation"]:
-            self.assert_deck_exists(config.decks[entry_kind])
-            self.assert_model_exists(config.templates[entry_kind])
-            self.validate_mapping(
-                config.templates[entry_kind], config.mappings[entry_kind]
-            )
 
 
 def entry_to_anki_fields(entry, mapping):

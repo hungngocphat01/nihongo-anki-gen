@@ -2,8 +2,8 @@ from typing import Optional, List
 
 from langchain.agents import create_agent
 
-from ankigen.utils import logger
-from ankigen.schema import Entry, ModelOutput
+from ankitools.core.utils import logger
+from ankitools.llm.schema import Entry, ModelOutput
 
 
 class LLMHandler:

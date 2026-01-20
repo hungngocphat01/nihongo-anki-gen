@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "ankitools"
+version = "0.1.0"
+description = "Anki productivity tools CLI"
+authors = ["User <user@example.com>"]
+readme = "README.md"
+packages = [{include = "ankitools"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+langchain = ">=0.0.350"
+loguru = ">=0.7.0"
+pyyaml = ">=6.0"
+requests = ">=2.31.0"
+langchain-google-vertexai = ">=3.0.1"
+pydantic = "^2.0"
+langchain-google-genai = "^4.2.0"
+
+[tool.poetry.scripts]
+ankitools = "ankitools.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,28 @@
+# Common settings
+anki:
+  connect_url: http://localhost:8765
+
+# Configuration for 'gencards' command
+gencards:
+  decks:
+    vocab: Japanese::Vocabulary
+    collocation: Japanese::Collocations
+  templates:
+    vocab: 'Nihongo Sentence Translation'
+    collocation: 'Nihongo Sentence Translation'
+  mappings:
+    vocab:
+      # format: <Anki Field Name>: <Generated Key>
+      Expression: vocab
+      Reading: furigana
+      Meaning: meaning
+      Example: example
+      Translation: example_trans
+      HanViet: hanviet
+    collocation:
+      Expression: vocab
+      Reading: furigana
+      Meaning: meaning
+      Example: example
+      Translation: example_trans
+      HanViet: hanviet
