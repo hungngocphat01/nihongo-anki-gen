@@ -9,8 +9,7 @@ from ankitools.core.console import print_change_preview
 from ankitools.core.utils import logger
 
 def setup_parser(parser: argparse.ArgumentParser):
-    parser.add_argument('config', type=Path, nargs='?', default=Path('config.yaml'),
-                       help='Path to configuration file')
+    parser.add_argument('--config', type=str, help='Path to configuration file (default: ~/.config/ankitools/config.yaml)')
     parser.add_argument('--deck', type=str, help='Override target deck name')
     parser.add_argument('--write', action='store_true', help='Write changes to Anki (default: Dry Run)')
     parser.add_argument('--limit', type=int, help='Limit number of cards to process')
