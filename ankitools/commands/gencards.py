@@ -64,7 +64,12 @@ def setup_parser(parser):
         "--anki-connect", help="URL to AnkiConnect server", default=ANKI_CONNECT_URL
     )
     parser.add_argument(
-        "--llm", help="LLM to use", default="google_genai:gemini-2.5-flash"
+        "--llm",
+        help=(
+            "LLM to use. Examples: google_genai:gemini-2.5-flash or "
+            "openrouter:google/gemini-2.5-flash"
+        ),
+        default="google_genai:gemini-2.5-flash",
     )
     parser.add_argument("--sys-prompt", required=False, help="System prompt file (txt)")
     parser.add_argument(
